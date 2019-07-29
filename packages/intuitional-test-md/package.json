@@ -1,17 +1,11 @@
 {
-  "name": "intuitional-test-stringify",
+  "name": "intuitional-test-md",
   "version": "0.0.0",
-  "description": "Stringify the intuitional test's AST",
-  "keywords": [
-    "stringify",
-    "intuitional",
-    "test",
-    "intuitional-test"
-  ],
+  "description": "Run intuitional test in markdown",
   "author": "imcuttle <moyuyc95@gmail.com>",
   "homepage": "https://github.com/imcuttle/intuitional-test#readme",
   "license": "MIT",
-  "main": "lib/intuitional-test-stringify.js",
+  "main": "lib/intuitional-test-md.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -23,18 +17,13 @@
     "type": "git",
     "url": "git+https://github.com/imcuttle/intuitional-test.git"
   },
+  "dependencies": {
+    "intuitional-test": "^0.0.0"
+  },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "bugs": {
     "url": "https://github.com/imcuttle/intuitional-test/issues"
-  },
-  "dependencies": {
-    "@babel/generator": "^7.5.5",
-    "@babel/traverse": "^7.5.5",
-    "babel-plugin-intuitional-test-stringify": "^0.0.0"
-  },
-  "devDependencies": {
-    "intuitional-test-parse": "^0.0.0"
   }
 }

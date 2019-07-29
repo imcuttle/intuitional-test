@@ -14,17 +14,17 @@ add(1, 2);
 
 1+2; // => 3`)
     expect(intuitionalTestStringify(ast)).toMatchInlineSnapshot(`
-"var _assert = require(\\"assert\\");
+"var _looseEqual = require(\\"assert\\").deepEqual;
 
 const add = (a, b) => a + b;
 
-_assert(add(1, 1), 2, \\"unknown message 0\\"); // => 2
+_looseEqual(add(1, 1), 2, \\"unknown message 0\\"); // => 2
 
 
-_assert(add(1, 2), 3, \\"unknown message 1\\"); // => 3
+_looseEqual(add(1, 2), 3, \\"unknown message 1\\"); // => 3
 
 
-_assert(1 + 2, 3, \\"unknown message 2\\"); // => 3"
+_looseEqual(1 + 2, 3, \\"unknown message 2\\"); // => 3"
 `)
   })
 })
