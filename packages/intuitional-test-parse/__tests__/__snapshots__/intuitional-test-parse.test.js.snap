@@ -1,0 +1,2265 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`intuitional-test-parse spec test 1`] = `
+Node {
+  "comments": Array [
+    Object {
+      "end": 54,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 17,
+          "line": 4,
+        },
+        "start": Position {
+          "column": 10,
+          "line": 4,
+        },
+      },
+      "start": 47,
+      "type": "CommentLine",
+      "value": " => 2",
+    },
+    Object {
+      "end": 74,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 7,
+          "line": 7,
+        },
+        "start": Position {
+          "column": 0,
+          "line": 7,
+        },
+      },
+      "start": 67,
+      "type": "CommentLine",
+      "value": " => 3",
+    },
+    Object {
+      "end": 88,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 12,
+          "line": 9,
+        },
+        "start": Position {
+          "column": 5,
+          "line": 9,
+        },
+      },
+      "start": 81,
+      "type": "CommentLine",
+      "value": " => 3",
+    },
+    Object {
+      "end": 142,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 3,
+          "line": 16,
+        },
+        "start": Position {
+          "column": 0,
+          "line": 13,
+        },
+      },
+      "start": 113,
+      "type": "CommentBlock",
+      "value": " => [
+  {abc: 'abc'}
+ ]
+ ",
+    },
+    Object {
+      "end": 155,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 11,
+          "line": 18,
+        },
+        "start": Position {
+          "column": 4,
+          "line": 18,
+        },
+      },
+      "start": 148,
+      "type": "CommentLine",
+      "value": " => 3",
+    },
+  ],
+  "end": 163,
+  "loc": SourceLocation {
+    "end": Position {
+      "column": 6,
+      "line": 20,
+    },
+    "start": Position {
+      "column": 0,
+      "line": 1,
+    },
+  },
+  "program": Node {
+    "body": Array [
+      Node {
+        "declarations": Array [
+          Node {
+            "end": 34,
+            "id": Node {
+              "end": 16,
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 15,
+                  "line": 2,
+                },
+                "identifierName": "add",
+                "start": Position {
+                  "column": 12,
+                  "line": 2,
+                },
+              },
+              "name": "add",
+              "start": 13,
+              "type": "Identifier",
+            },
+            "init": Node {
+              "async": false,
+              "body": Node {
+                "end": 34,
+                "left": Node {
+                  "end": 30,
+                  "loc": SourceLocation {
+                    "end": Position {
+                      "column": 29,
+                      "line": 2,
+                    },
+                    "identifierName": "a",
+                    "start": Position {
+                      "column": 28,
+                      "line": 2,
+                    },
+                  },
+                  "name": "a",
+                  "start": 29,
+                  "type": "Identifier",
+                },
+                "loc": SourceLocation {
+                  "end": Position {
+                    "column": 33,
+                    "line": 2,
+                  },
+                  "start": Position {
+                    "column": 28,
+                    "line": 2,
+                  },
+                },
+                "operator": "+",
+                "right": Node {
+                  "end": 34,
+                  "loc": SourceLocation {
+                    "end": Position {
+                      "column": 33,
+                      "line": 2,
+                    },
+                    "identifierName": "b",
+                    "start": Position {
+                      "column": 32,
+                      "line": 2,
+                    },
+                  },
+                  "name": "b",
+                  "start": 33,
+                  "type": "Identifier",
+                },
+                "start": 29,
+                "type": "BinaryExpression",
+              },
+              "end": 34,
+              "expression": true,
+              "generator": false,
+              "id": null,
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 33,
+                  "line": 2,
+                },
+                "start": Position {
+                  "column": 18,
+                  "line": 2,
+                },
+              },
+              "params": Array [
+                Node {
+                  "end": 21,
+                  "loc": SourceLocation {
+                    "end": Position {
+                      "column": 20,
+                      "line": 2,
+                    },
+                    "identifierName": "a",
+                    "start": Position {
+                      "column": 19,
+                      "line": 2,
+                    },
+                  },
+                  "name": "a",
+                  "start": 20,
+                  "type": "Identifier",
+                },
+                Node {
+                  "end": 24,
+                  "loc": SourceLocation {
+                    "end": Position {
+                      "column": 23,
+                      "line": 2,
+                    },
+                    "identifierName": "b",
+                    "start": Position {
+                      "column": 22,
+                      "line": 2,
+                    },
+                  },
+                  "name": "b",
+                  "start": 23,
+                  "type": "Identifier",
+                },
+              ],
+              "start": 19,
+              "type": "ArrowFunctionExpression",
+            },
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 33,
+                "line": 2,
+              },
+              "start": Position {
+                "column": 12,
+                "line": 2,
+              },
+            },
+            "start": 13,
+            "type": "VariableDeclarator",
+          },
+        ],
+        "end": 35,
+        "kind": "const",
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 34,
+            "line": 2,
+          },
+          "start": Position {
+            "column": 6,
+            "line": 2,
+          },
+        },
+        "start": 7,
+        "type": "VariableDeclaration",
+      },
+      Node {
+        "data": Object {
+          "comparison": "=>",
+          "rawValue": "2",
+          "type": "looseEqual",
+        },
+        "end": 46,
+        "expression": Node {
+          "arguments": Array [
+            Node {
+              "end": 42,
+              "extra": Object {
+                "raw": "1",
+                "rawValue": 1,
+              },
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 5,
+                  "line": 4,
+                },
+                "start": Position {
+                  "column": 4,
+                  "line": 4,
+                },
+              },
+              "start": 41,
+              "type": "NumericLiteral",
+              "value": 1,
+            },
+            Node {
+              "end": 45,
+              "extra": Object {
+                "raw": "1",
+                "rawValue": 1,
+              },
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 8,
+                  "line": 4,
+                },
+                "start": Position {
+                  "column": 7,
+                  "line": 4,
+                },
+              },
+              "start": 44,
+              "type": "NumericLiteral",
+              "value": 1,
+            },
+          ],
+          "callee": Node {
+            "end": 40,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 3,
+                "line": 4,
+              },
+              "identifierName": "add",
+              "start": Position {
+                "column": 0,
+                "line": 4,
+              },
+            },
+            "name": "add",
+            "start": 37,
+            "type": "Identifier",
+          },
+          "end": 46,
+          "loc": SourceLocation {
+            "end": Position {
+              "column": 9,
+              "line": 4,
+            },
+            "start": Position {
+              "column": 0,
+              "line": 4,
+            },
+          },
+          "start": 37,
+          "trailingComments": null,
+          "type": "CallExpression",
+        },
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 9,
+            "line": 4,
+          },
+          "start": Position {
+            "column": 0,
+            "line": 4,
+          },
+        },
+        "start": 37,
+        "trailingComments": Array [
+          Object {
+            "end": 54,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 17,
+                "line": 4,
+              },
+              "start": Position {
+                "column": 10,
+                "line": 4,
+              },
+            },
+            "start": 47,
+            "type": "CommentLine",
+            "value": " => 2",
+          },
+        ],
+        "type": "ExpressionStatement",
+      },
+      Node {
+        "data": Object {
+          "comparison": "=>",
+          "rawValue": "3",
+          "type": "looseEqual",
+        },
+        "end": 66,
+        "expression": Node {
+          "arguments": Array [
+            Node {
+              "end": 61,
+              "extra": Object {
+                "raw": "1",
+                "rawValue": 1,
+              },
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 5,
+                  "line": 6,
+                },
+                "start": Position {
+                  "column": 4,
+                  "line": 6,
+                },
+              },
+              "start": 60,
+              "type": "NumericLiteral",
+              "value": 1,
+            },
+            Node {
+              "end": 64,
+              "extra": Object {
+                "raw": "2",
+                "rawValue": 2,
+              },
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 8,
+                  "line": 6,
+                },
+                "start": Position {
+                  "column": 7,
+                  "line": 6,
+                },
+              },
+              "start": 63,
+              "type": "NumericLiteral",
+              "value": 2,
+            },
+          ],
+          "callee": Node {
+            "end": 59,
+            "leadingComments": null,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 3,
+                "line": 6,
+              },
+              "identifierName": "add",
+              "start": Position {
+                "column": 0,
+                "line": 6,
+              },
+            },
+            "name": "add",
+            "start": 56,
+            "type": "Identifier",
+          },
+          "end": 65,
+          "leadingComments": null,
+          "loc": SourceLocation {
+            "end": Position {
+              "column": 9,
+              "line": 6,
+            },
+            "start": Position {
+              "column": 0,
+              "line": 6,
+            },
+          },
+          "start": 56,
+          "type": "CallExpression",
+        },
+        "leadingComments": Array [
+          Object {
+            "end": 54,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 17,
+                "line": 4,
+              },
+              "start": Position {
+                "column": 10,
+                "line": 4,
+              },
+            },
+            "start": 47,
+            "type": "CommentLine",
+            "value": " => 2",
+          },
+        ],
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 10,
+            "line": 6,
+          },
+          "start": Position {
+            "column": 0,
+            "line": 6,
+          },
+        },
+        "start": 56,
+        "trailingComments": Array [
+          Object {
+            "end": 74,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 7,
+                "line": 7,
+              },
+              "start": Position {
+                "column": 0,
+                "line": 7,
+              },
+            },
+            "start": 67,
+            "type": "CommentLine",
+            "value": " => 3",
+          },
+        ],
+        "type": "ExpressionStatement",
+      },
+      Node {
+        "data": Object {
+          "comparison": "=>",
+          "rawValue": "3",
+          "type": "looseEqual",
+        },
+        "end": 80,
+        "expression": Node {
+          "end": 79,
+          "leadingComments": null,
+          "left": Node {
+            "end": 77,
+            "extra": Object {
+              "raw": "1",
+              "rawValue": 1,
+            },
+            "leadingComments": null,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 1,
+                "line": 9,
+              },
+              "start": Position {
+                "column": 0,
+                "line": 9,
+              },
+            },
+            "start": 76,
+            "type": "NumericLiteral",
+            "value": 1,
+          },
+          "loc": SourceLocation {
+            "end": Position {
+              "column": 3,
+              "line": 9,
+            },
+            "start": Position {
+              "column": 0,
+              "line": 9,
+            },
+          },
+          "operator": "+",
+          "right": Node {
+            "end": 79,
+            "extra": Object {
+              "raw": "2",
+              "rawValue": 2,
+            },
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 3,
+                "line": 9,
+              },
+              "start": Position {
+                "column": 2,
+                "line": 9,
+              },
+            },
+            "start": 78,
+            "type": "NumericLiteral",
+            "value": 2,
+          },
+          "start": 76,
+          "type": "BinaryExpression",
+        },
+        "leadingComments": Array [
+          Object {
+            "end": 74,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 7,
+                "line": 7,
+              },
+              "start": Position {
+                "column": 0,
+                "line": 7,
+              },
+            },
+            "start": 67,
+            "type": "CommentLine",
+            "value": " => 3",
+          },
+        ],
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 4,
+            "line": 9,
+          },
+          "start": Position {
+            "column": 0,
+            "line": 9,
+          },
+        },
+        "start": 76,
+        "trailingComments": Array [
+          Object {
+            "end": 88,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 12,
+                "line": 9,
+              },
+              "start": Position {
+                "column": 5,
+                "line": 9,
+              },
+            },
+            "start": 81,
+            "type": "CommentLine",
+            "value": " => 3",
+          },
+        ],
+        "type": "ExpressionStatement",
+      },
+      Node {
+        "data": Object {
+          "comparison": "=>",
+          "rawValue": "[
+  {abc: 'abc'}
+ ]
+ ",
+          "type": "looseEqual",
+        },
+        "end": 111,
+        "expression": Node {
+          "elements": Array [
+            Node {
+              "end": 109,
+              "leadingComments": null,
+              "loc": SourceLocation {
+                "end": Position {
+                  "column": 19,
+                  "line": 11,
+                },
+                "start": Position {
+                  "column": 1,
+                  "line": 11,
+                },
+              },
+              "properties": Array [
+                Node {
+                  "computed": false,
+                  "end": 108,
+                  "key": Node {
+                    "end": 95,
+                    "leadingComments": null,
+                    "loc": SourceLocation {
+                      "end": Position {
+                        "column": 5,
+                        "line": 11,
+                      },
+                      "identifierName": "abc",
+                      "start": Position {
+                        "column": 2,
+                        "line": 11,
+                      },
+                    },
+                    "name": "abc",
+                    "start": 92,
+                    "type": "Identifier",
+                  },
+                  "leadingComments": null,
+                  "loc": SourceLocation {
+                    "end": Position {
+                      "column": 18,
+                      "line": 11,
+                    },
+                    "start": Position {
+                      "column": 2,
+                      "line": 11,
+                    },
+                  },
+                  "method": false,
+                  "shorthand": false,
+                  "start": 92,
+                  "type": "ObjectProperty",
+                  "value": Node {
+                    "end": 108,
+                    "left": Node {
+                      "end": 102,
+                      "extra": Object {
+                        "raw": "'abc'",
+                        "rawValue": "abc",
+                      },
+                      "loc": SourceLocation {
+                        "end": Position {
+                          "column": 12,
+                          "line": 11,
+                        },
+                        "start": Position {
+                          "column": 7,
+                          "line": 11,
+                        },
+                      },
+                      "start": 97,
+                      "type": "StringLiteral",
+                      "value": "abc",
+                    },
+                    "loc": SourceLocation {
+                      "end": Position {
+                        "column": 18,
+                        "line": 11,
+                      },
+                      "start": Position {
+                        "column": 7,
+                        "line": 11,
+                      },
+                    },
+                    "operator": "+",
+                    "right": Node {
+                      "end": 108,
+                      "extra": Object {
+                        "raw": "'x'",
+                        "rawValue": "x",
+                      },
+                      "loc": SourceLocation {
+                        "end": Position {
+                          "column": 18,
+                          "line": 11,
+                        },
+                        "start": Position {
+                          "column": 15,
+                          "line": 11,
+                        },
+                      },
+                      "start": 105,
+                      "type": "StringLiteral",
+                      "value": "x",
+                    },
+                    "start": 97,
+                    "type": "BinaryExpression",
+                  },
+                },
+              ],
+              "start": 91,
+              "type": "ObjectExpression",
+            },
+          ],
+          "end": 110,
+          "leadingComments": null,
+          "loc": SourceLocation {
+            "end": Position {
+              "column": 20,
+              "line": 11,
+            },
+            "start": Position {
+              "column": 0,
+              "line": 11,
+            },
+          },
+          "start": 90,
+          "type": "ArrayExpression",
+        },
+        "leadingComments": Array [
+          Object {
+            "end": 88,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 12,
+                "line": 9,
+              },
+              "start": Position {
+                "column": 5,
+                "line": 9,
+              },
+            },
+            "start": 81,
+            "type": "CommentLine",
+            "value": " => 3",
+          },
+        ],
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 21,
+            "line": 11,
+          },
+          "start": Position {
+            "column": 0,
+            "line": 11,
+          },
+        },
+        "start": 90,
+        "trailingComments": Array [
+          Object {
+            "end": 142,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 3,
+                "line": 16,
+              },
+              "start": Position {
+                "column": 0,
+                "line": 13,
+              },
+            },
+            "start": 113,
+            "type": "CommentBlock",
+            "value": " => [
+  {abc: 'abc'}
+ ]
+ ",
+          },
+        ],
+        "type": "ExpressionStatement",
+      },
+      Node {
+        "data": Object {
+          "comparison": "=>",
+          "rawValue": "3",
+          "type": "looseEqual",
+        },
+        "end": 147,
+        "expression": Node {
+          "end": 147,
+          "leadingComments": null,
+          "left": Node {
+            "end": 145,
+            "extra": Object {
+              "raw": "1",
+              "rawValue": 1,
+            },
+            "leadingComments": null,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 1,
+                "line": 18,
+              },
+              "start": Position {
+                "column": 0,
+                "line": 18,
+              },
+            },
+            "start": 144,
+            "type": "NumericLiteral",
+            "value": 1,
+          },
+          "loc": SourceLocation {
+            "end": Position {
+              "column": 3,
+              "line": 18,
+            },
+            "start": Position {
+              "column": 0,
+              "line": 18,
+            },
+          },
+          "operator": "+",
+          "right": Node {
+            "end": 147,
+            "extra": Object {
+              "raw": "2",
+              "rawValue": 2,
+            },
+            "leadingComments": null,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 3,
+                "line": 18,
+              },
+              "start": Position {
+                "column": 2,
+                "line": 18,
+              },
+            },
+            "start": 146,
+            "trailingComments": null,
+            "type": "NumericLiteral",
+            "value": 2,
+          },
+          "start": 144,
+          "trailingComments": null,
+          "type": "BinaryExpression",
+        },
+        "leadingComments": Array [
+          Object {
+            "end": 142,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 3,
+                "line": 16,
+              },
+              "start": Position {
+                "column": 0,
+                "line": 13,
+              },
+            },
+            "start": 113,
+            "type": "CommentBlock",
+            "value": " => [
+  {abc: 'abc'}
+ ]
+ ",
+          },
+        ],
+        "loc": SourceLocation {
+          "end": Position {
+            "column": 3,
+            "line": 18,
+          },
+          "start": Position {
+            "column": 0,
+            "line": 18,
+          },
+        },
+        "start": 144,
+        "trailingComments": Array [
+          Object {
+            "end": 155,
+            "loc": SourceLocation {
+              "end": Position {
+                "column": 11,
+                "line": 18,
+              },
+              "start": Position {
+                "column": 4,
+                "line": 18,
+              },
+            },
+            "start": 148,
+            "type": "CommentLine",
+            "value": " => 3",
+          },
+        ],
+        "type": "ExpressionStatement",
+      },
+    ],
+    "directives": Array [],
+    "end": 163,
+    "loc": SourceLocation {
+      "end": Position {
+        "column": 6,
+        "line": 20,
+      },
+      "start": Position {
+        "column": 0,
+        "line": 1,
+      },
+    },
+    "sourceType": "module",
+    "start": 0,
+    "type": "Program",
+  },
+  "start": 0,
+  "tokens": Array [
+    Token {
+      "end": 12,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 11,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 6,
+          "line": 2,
+        },
+      },
+      "start": 7,
+      "type": KeywordTokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": "const",
+        "label": "const",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": "const",
+    },
+    Token {
+      "end": 16,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 15,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 12,
+          "line": 2,
+        },
+      },
+      "start": 13,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "name",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": "add",
+    },
+    Token {
+      "end": 18,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 17,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 16,
+          "line": 2,
+        },
+      },
+      "start": 17,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": true,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "=",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": "=",
+    },
+    Token {
+      "end": 20,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 19,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 18,
+          "line": 2,
+        },
+      },
+      "start": 19,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "(",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 21,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 20,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 19,
+          "line": 2,
+        },
+      },
+      "start": 20,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "name",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": "a",
+    },
+    Token {
+      "end": 22,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 21,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 20,
+          "line": 2,
+        },
+      },
+      "start": 21,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": ",",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 24,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 23,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 22,
+          "line": 2,
+        },
+      },
+      "start": 23,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "name",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": "b",
+    },
+    Token {
+      "end": 25,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 24,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 23,
+          "line": 2,
+        },
+      },
+      "start": 24,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": ")",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": [Function],
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 28,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 27,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 25,
+          "line": 2,
+        },
+      },
+      "start": 26,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "=>",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 30,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 29,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 28,
+          "line": 2,
+        },
+      },
+      "start": 29,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "name",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": "a",
+    },
+    Token {
+      "end": 32,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 31,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 30,
+          "line": 2,
+        },
+      },
+      "start": 31,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": 9,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "+/-",
+        "postfix": false,
+        "prefix": true,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": "+",
+    },
+    Token {
+      "end": 34,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 33,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 32,
+          "line": 2,
+        },
+      },
+      "start": 33,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "name",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": "b",
+    },
+    Token {
+      "end": 35,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 34,
+          "line": 2,
+        },
+        "start": Position {
+          "column": 33,
+          "line": 2,
+        },
+      },
+      "start": 34,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": ";",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 40,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 3,
+          "line": 4,
+        },
+        "start": Position {
+          "column": 0,
+          "line": 4,
+        },
+      },
+      "start": 37,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "name",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": "add",
+    },
+    Token {
+      "end": 41,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 4,
+          "line": 4,
+        },
+        "start": Position {
+          "column": 3,
+          "line": 4,
+        },
+      },
+      "start": 40,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "(",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 42,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 5,
+          "line": 4,
+        },
+        "start": Position {
+          "column": 4,
+          "line": 4,
+        },
+      },
+      "start": 41,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "num",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": 1,
+    },
+    Token {
+      "end": 43,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 6,
+          "line": 4,
+        },
+        "start": Position {
+          "column": 5,
+          "line": 4,
+        },
+      },
+      "start": 42,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": ",",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 45,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 8,
+          "line": 4,
+        },
+        "start": Position {
+          "column": 7,
+          "line": 4,
+        },
+      },
+      "start": 44,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "num",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": 1,
+    },
+    Token {
+      "end": 46,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 9,
+          "line": 4,
+        },
+        "start": Position {
+          "column": 8,
+          "line": 4,
+        },
+      },
+      "start": 45,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": ")",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": [Function],
+      },
+      "value": undefined,
+    },
+    Object {
+      "end": 54,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 17,
+          "line": 4,
+        },
+        "start": Position {
+          "column": 10,
+          "line": 4,
+        },
+      },
+      "start": 47,
+      "type": "CommentLine",
+      "value": " => 2",
+    },
+    Token {
+      "end": 59,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 3,
+          "line": 6,
+        },
+        "start": Position {
+          "column": 0,
+          "line": 6,
+        },
+      },
+      "start": 56,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "name",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": "add",
+    },
+    Token {
+      "end": 60,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 4,
+          "line": 6,
+        },
+        "start": Position {
+          "column": 3,
+          "line": 6,
+        },
+      },
+      "start": 59,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "(",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 61,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 5,
+          "line": 6,
+        },
+        "start": Position {
+          "column": 4,
+          "line": 6,
+        },
+      },
+      "start": 60,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "num",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": 1,
+    },
+    Token {
+      "end": 62,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 6,
+          "line": 6,
+        },
+        "start": Position {
+          "column": 5,
+          "line": 6,
+        },
+      },
+      "start": 61,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": ",",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 64,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 8,
+          "line": 6,
+        },
+        "start": Position {
+          "column": 7,
+          "line": 6,
+        },
+      },
+      "start": 63,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "num",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": 2,
+    },
+    Token {
+      "end": 65,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 9,
+          "line": 6,
+        },
+        "start": Position {
+          "column": 8,
+          "line": 6,
+        },
+      },
+      "start": 64,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": ")",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": [Function],
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 66,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 10,
+          "line": 6,
+        },
+        "start": Position {
+          "column": 9,
+          "line": 6,
+        },
+      },
+      "start": 65,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": ";",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+    Object {
+      "end": 74,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 7,
+          "line": 7,
+        },
+        "start": Position {
+          "column": 0,
+          "line": 7,
+        },
+      },
+      "start": 67,
+      "type": "CommentLine",
+      "value": " => 3",
+    },
+    Token {
+      "end": 77,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 1,
+          "line": 9,
+        },
+        "start": Position {
+          "column": 0,
+          "line": 9,
+        },
+      },
+      "start": 76,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "num",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": 1,
+    },
+    Token {
+      "end": 78,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 2,
+          "line": 9,
+        },
+        "start": Position {
+          "column": 1,
+          "line": 9,
+        },
+      },
+      "start": 77,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": 9,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "+/-",
+        "postfix": false,
+        "prefix": true,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": "+",
+    },
+    Token {
+      "end": 79,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 3,
+          "line": 9,
+        },
+        "start": Position {
+          "column": 2,
+          "line": 9,
+        },
+      },
+      "start": 78,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "num",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": 2,
+    },
+    Token {
+      "end": 80,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 4,
+          "line": 9,
+        },
+        "start": Position {
+          "column": 3,
+          "line": 9,
+        },
+      },
+      "start": 79,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": ";",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+    Object {
+      "end": 88,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 12,
+          "line": 9,
+        },
+        "start": Position {
+          "column": 5,
+          "line": 9,
+        },
+      },
+      "start": 81,
+      "type": "CommentLine",
+      "value": " => 3",
+    },
+    Token {
+      "end": 91,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 1,
+          "line": 11,
+        },
+        "start": Position {
+          "column": 0,
+          "line": 11,
+        },
+      },
+      "start": 90,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "[",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 92,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 2,
+          "line": 11,
+        },
+        "start": Position {
+          "column": 1,
+          "line": 11,
+        },
+      },
+      "start": 91,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "{",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 95,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 5,
+          "line": 11,
+        },
+        "start": Position {
+          "column": 2,
+          "line": 11,
+        },
+      },
+      "start": 92,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "name",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": [Function],
+      },
+      "value": "abc",
+    },
+    Token {
+      "end": 96,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 6,
+          "line": 11,
+        },
+        "start": Position {
+          "column": 5,
+          "line": 11,
+        },
+      },
+      "start": 95,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": ":",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 102,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 12,
+          "line": 11,
+        },
+        "start": Position {
+          "column": 7,
+          "line": 11,
+        },
+      },
+      "start": 97,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "string",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": "abc",
+    },
+    Token {
+      "end": 104,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 14,
+          "line": 11,
+        },
+        "start": Position {
+          "column": 13,
+          "line": 11,
+        },
+      },
+      "start": 103,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": 9,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "+/-",
+        "postfix": false,
+        "prefix": true,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": "+",
+    },
+    Token {
+      "end": 108,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 18,
+          "line": 11,
+        },
+        "start": Position {
+          "column": 15,
+          "line": 11,
+        },
+      },
+      "start": 105,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "string",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": "x",
+    },
+    Token {
+      "end": 109,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 19,
+          "line": 11,
+        },
+        "start": Position {
+          "column": 18,
+          "line": 11,
+        },
+      },
+      "start": 108,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "}",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": [Function],
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 110,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 20,
+          "line": 11,
+        },
+        "start": Position {
+          "column": 19,
+          "line": 11,
+        },
+      },
+      "start": 109,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "]",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+    Token {
+      "end": 111,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 21,
+          "line": 11,
+        },
+        "start": Position {
+          "column": 20,
+          "line": 11,
+        },
+      },
+      "start": 110,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": ";",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+    Object {
+      "end": 142,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 3,
+          "line": 16,
+        },
+        "start": Position {
+          "column": 0,
+          "line": 13,
+        },
+      },
+      "start": 113,
+      "type": "CommentBlock",
+      "value": " => [
+  {abc: 'abc'}
+ ]
+ ",
+    },
+    Token {
+      "end": 145,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 1,
+          "line": 18,
+        },
+        "start": Position {
+          "column": 0,
+          "line": 18,
+        },
+      },
+      "start": 144,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "num",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": 1,
+    },
+    Token {
+      "end": 146,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 2,
+          "line": 18,
+        },
+        "start": Position {
+          "column": 1,
+          "line": 18,
+        },
+      },
+      "start": 145,
+      "type": TokenType {
+        "beforeExpr": true,
+        "binop": 9,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "+/-",
+        "postfix": false,
+        "prefix": true,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": "+",
+    },
+    Token {
+      "end": 147,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 3,
+          "line": 18,
+        },
+        "start": Position {
+          "column": 2,
+          "line": 18,
+        },
+      },
+      "start": 146,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "num",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": true,
+        "updateContext": null,
+      },
+      "value": 2,
+    },
+    Object {
+      "end": 155,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 11,
+          "line": 18,
+        },
+        "start": Position {
+          "column": 4,
+          "line": 18,
+        },
+      },
+      "start": 148,
+      "type": "CommentLine",
+      "value": " => 3",
+    },
+    Token {
+      "end": 163,
+      "loc": SourceLocation {
+        "end": Position {
+          "column": 6,
+          "line": 20,
+        },
+        "start": Position {
+          "column": 6,
+          "line": 20,
+        },
+      },
+      "start": 163,
+      "type": TokenType {
+        "beforeExpr": false,
+        "binop": null,
+        "isAssign": false,
+        "isLoop": false,
+        "keyword": undefined,
+        "label": "eof",
+        "postfix": false,
+        "prefix": false,
+        "rightAssociative": false,
+        "startsExpr": false,
+        "updateContext": null,
+      },
+      "value": undefined,
+    },
+  ],
+  "type": "File",
+}
+`;

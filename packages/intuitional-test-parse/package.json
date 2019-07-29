@@ -1,0 +1,37 @@
+{
+  "name": "intuitional-test-parse",
+  "version": "0.0.0",
+  "description": "Make testing is intuitional and convenient in comment",
+  "keywords": [
+    "test",
+    "parse",
+    "ast",
+    "comment"
+  ],
+  "author": "imcuttle <moyuyc95@gmail.com>",
+  "homepage": "https://github.com/imcuttle/intuitional-test#readme",
+  "license": "MIT",
+  "main": "lib/intuitional-test.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "@babel/traverse": "^7.5.5",
+    "babylon": "^6.18.0",
+    "jsdoc-regex": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imcuttle/intuitional-test.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/imcuttle/intuitional-test/issues"
+  }
+}

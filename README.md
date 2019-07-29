@@ -19,13 +19,20 @@ yarn add intuitional-test
 ## Syntax
 
 ```javascript
-/**
- * @example
- * add(1, 2) // => 3
- */
 const add = (a, b) => a + b
 
-add(1, 1) // => 2
+add(1, 1) // != 1
+
+add(1, 2)
+// => 3
+
+;[{}] // => [{}]
+
+;[{ abc: 'abc' }]
+/* => [
+ *   {abc: 'abc'}
+ * ]
+ */
 ```
 
 ## Usage

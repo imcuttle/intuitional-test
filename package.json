@@ -1,6 +1,7 @@
 {
   "name": "intuitional-test",
   "version": "1.0.0",
+  "private": true,
   "main": "index.js",
   "description": "Make testing is intuitional and convenient in comment, markdown, and so on. ",
   "author": "imcuttle <moyuyc95@gmail.com>",
