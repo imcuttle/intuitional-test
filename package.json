@@ -34,11 +34,6 @@
   "typings": "index.d.ts",
   "license": "MIT",
   "repository": "imcuttle/intuitional-test",
-  "jest": {
-    "testMatch": [
-      "**/__test{s,}__/*.(spec|test).{t,j}s{x,}"
-    ]
-  },
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"

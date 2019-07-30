@@ -21,7 +21,8 @@
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
   "devDependencies": {
-    "@babel/core": "^7.5.5"
+    "@babel/core": "^7.5.5",
+    "@babel/preset-react": "^7.0.0"
   },
   "dependencies": {
     "babel-plugin-intuitional-test-parse": "^0.0.0",

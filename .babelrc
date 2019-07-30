@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "./packages/babel-preset-intuitional-test",
+      {
+        "libraryTarget": "external",
+        "wrapTemplate": "it(MESSAGE, function() {return BODY});",
+        "libraryName": "expect",
+        "expressionTemplate": "LIBRARY_NAME(ACTUAL).METHOD(EXPECTED)",
+        "methodMapper": {
+          "looseEqual": "toEqual",
+          "*": "toEqual"
+        }
+      }
+    ]
+  ]
+}

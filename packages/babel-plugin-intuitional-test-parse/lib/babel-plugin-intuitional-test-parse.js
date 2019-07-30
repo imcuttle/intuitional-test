@@ -15,6 +15,10 @@ const typeMapper = {
   '!==': 'strictNotEqual'
 }
 
+function getOptions(options) {
+  return Object.assign({}, options)
+}
+
 function matches(text) {
   if (isJSDoc(text)) return
 
@@ -31,11 +35,13 @@ function matches(text) {
 module.exports = babelPluginIntuitionalTestParse
 module.exports.createVisitor = createVisitor
 
-function babelPluginIntuitionalTestParse(opts) {
-  return { visitor: createVisitor(opts) }
+function babelPluginIntuitionalTestParse(babel, opts) {
+  return { visitor: createVisitor(babel, opts) }
 }
 
-function createVisitor(opts) {
+function createVisitor(babel, opts) {
+  opts = getOptions(opts)
+
   return {
     ExpressionStatement(path) {
       const { leadingComments = [], trailingComments = [] } = path.node
@@ -45,10 +51,16 @@ function createVisitor(opts) {
 
       if (tail && (matched = matches(tail.value))) {
         if (leading && !isJSDoc(leading.value) && !matches(leading.value)) {
-          matched.description = leading.node.value
+          matched.description = leading.value.trim()
         }
-
-        path.node.data = Object.assign(path.node.data || {}, matched)
+        path.node.data = Object.assign(
+          path.node.data || {
+            intuitionalTest: {
+              ...matched,
+              ...(path.node.data && path.node.data.intuitionalTest)
+            }
+          }
+        )
       }
     }
   }
