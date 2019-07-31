@@ -65,7 +65,5 @@ module.exports = createExtractor((text, { filename, accesses = null } = {}) => {
     })
   })
 
-  console.log(JSON.stringify(list, null, 2))
-
   return list
 })

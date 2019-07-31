@@ -24,10 +24,18 @@ function matches(text) {
 
   const result = text.match(/^\s*(==>|==|=>|!=|!==|=)\s*([^]+)$/)
   if (result) {
+    let rawValue = result[2].trim()
+    let async = false
+    if (/^Promise<(.*)>/.test(rawValue)) {
+      async = true
+      rawValue = RegExp.$1.trim()
+    }
+
     return {
       type: typeMapper[result[1]],
       comparison: result[1],
-      rawValue: result[2]
+      async,
+      rawValue
     }
   }
 }

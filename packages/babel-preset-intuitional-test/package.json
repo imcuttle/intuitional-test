@@ -5,7 +5,7 @@
   "keywords": [],
   "author": "imcuttle <moyuyc95@gmail.com>",
   "license": "ISC",
-  "main": "lib/babel-preset-intuitional-test.js",
+  "main": "lib/main.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"

@@ -14,9 +14,7 @@ function createExtractor(extractor) {
   return function(text, options = {}) {
     const { filename } = options
     const extractedList = extractor(text, options) || []
-    const list = new ExtractedList(extractedList, { filename })
-
-    return list
+    return new ExtractedList(extractedList, { filename })
   }
 }
 
@@ -32,7 +30,7 @@ class Extracted {
     Object.assign(this, data)
   }
   toString() {
-    return [this.namespace ? `// @namespace ${this.namespace}` : '', this.code].filter(Boolean).join('\n')
+    return this.code
   }
 }
 
@@ -50,6 +48,13 @@ class ExtractedList extends Array {
   push(...items) {
     items = items.map(item => new Extracted(item))
     return super.push(...items)
+  }
+
+  fillNamespace(prefix) {
+    let i = 1
+    this.forEach(extracted => {
+      extracted.namespace = extracted.namespace || prefix + '_' + i++
+    })
   }
 
   toString() {

@@ -18,7 +18,10 @@
     "url": "git+https://github.com/imcuttle/intuitional-test.git"
   },
   "dependencies": {
-    "babel-jest": "^24.8.0"
+    "babel-jest": "^24.8.0",
+    "extract-code-jsdoc": "^0.0.0",
+    "extract-code-md": "^0.0.0",
+    "babel-preset-intuitional-test": "^0.0.0"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"

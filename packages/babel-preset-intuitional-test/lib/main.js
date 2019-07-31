@@ -1,8 +1,8 @@
 'use strict'
 
-module.exports = babelPresetIntuitionalTest
+module.exports = main
 
-function babelPresetIntuitionalTest(context, { parseOptions, stringifyOptions, ...options } = {}) {
+function main(context, { parseOptions, stringifyOptions, ...options } = {}) {
   // TODO
 
   return {

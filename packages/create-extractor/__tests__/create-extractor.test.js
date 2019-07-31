@@ -24,9 +24,6 @@ ExtractedList [
 `)
 
     expect(Array.isArray(list)).toBeTruthy()
-    expect(list.toString()).toMatchInlineSnapshot(`
-"// @namespace ns
-var a = 123;"
-`)
+    expect(list.toString()).toMatchInlineSnapshot(`"var a = 123;"`)
   })
 })

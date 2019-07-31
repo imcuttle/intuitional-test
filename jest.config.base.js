@@ -9,11 +9,11 @@ module.exports = {
   roots: ['<rootDir>/packages'],
   testPathIgnorePatterns: ['__template'],
   transform: {
-    '^.+\\.jsx?$': 'babel-jest',
-    '^.+\\.md$': 'babel-jest'
+    '^.+\\.jsx?$': '<rootDir>/packages/intuitional-test-babel-jest',
+    '^.+\\.test\\.md$': '<rootDir>/packages/intuitional-test-babel-jest'
   },
   testRegex: '.(test|spec).(jsx?|md)$',
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node']
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node', 'md']
   // testMatch: ['**/__test{s,}__/*.(spec|test).{t,j}s{x,}'],
   // setupTestFrameworkScriptFile: '<rootDir>/scripts/test-setup.js'
 }
