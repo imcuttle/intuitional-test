@@ -22,7 +22,7 @@ function getOptions(options) {
 function matches(text) {
   if (isJSDoc(text)) return
 
-  const result = text.match(/^\s*(==>|==|=>|!=|!==|=)\s*([^]+)$/)
+  const result = text.match(/^\s*(==>|==|=>|!==|!=|=)\s+([^]+)$/)
   if (result) {
     let rawValue = result[2].trim()
     let async = false

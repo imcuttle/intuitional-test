@@ -6,14 +6,15 @@
  */
 
 module.exports = {
-  roots: ['<rootDir>/packages'],
-  testPathIgnorePatterns: ['__template'],
+  roots: ['<rootDir>', '<rootDir>/packages'],
+  testPathIgnorePatterns: ['__template', 'packages/.+/README.md'],
   transform: {
     '^.+\\.jsx?$': '<rootDir>/packages/intuitional-test-babel-jest',
-    '^.+\\.test\\.md$': '<rootDir>/packages/intuitional-test-babel-jest'
+    '^.+\\.md$': '<rootDir>/packages/intuitional-test-babel-jest'
   },
-  testRegex: '.(test|spec).(jsx?|md)$',
+  moduleNameMapper: {
+    // '^intuitional-test$': require.resolve('.')
+  },
+  testRegex: '((\\.(test|spec)\\.(jsx?|md))|(\\.md))$',
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node', 'md']
-  // testMatch: ['**/__test{s,}__/*.(spec|test).{t,j}s{x,}'],
-  // setupTestFrameworkScriptFile: '<rootDir>/scripts/test-setup.js'
 }

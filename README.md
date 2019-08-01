@@ -6,39 +6,41 @@
 [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
 [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow.svg?style=flat-square)](https://conventionalcommits.org)
 
-> Make testing is intuitional and convenient in comment, markdown, and so on.
-
-## Installation
-
-```bash
-npm install intuitional-test
-# or use yarn
-yarn add intuitional-test
-```
+> Make testing is intuitional and convenient in comment, markdown, jsdoc @example comment and so on.
 
 ## Syntax
 
-```javascript
+```javascript ns=syntax-definition
 const add = (a, b) => a + b
 
-add(1, 1) // != 1
+// looseEqual
+add(1, 1) // => 2
 
-add(1, 2)
-// => 3
+const a = {}
+// strictEqual
+a // ==> a
 
-;[{}] // => [{}]
+// not looseEqual
+;[{}] // != {}
 
+// not strictEqual
 ;[{ abc: 'abc' }]
-/* => [
- *   {abc: 'abc'}
- * ]
- */
+/* !== [
+   {abc: 'abc'}
+ ] */
+
+const addAsync = (a, b) => Promise.resolve(a + b)
+// async resolve value
+addAsync(1, 1) // => Promise<2>
 ```
+
+## How it works?
+
+intuitional-test use [`babel-preset-intuitional-test`](./packages/babel-preset-intuitional-test)
 
 ## Usage
 
 ```javascript
-const intuitionalTest = require('intuitional-test')
 ```
 
 ## API
