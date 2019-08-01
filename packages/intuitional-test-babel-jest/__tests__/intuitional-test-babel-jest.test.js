@@ -46,6 +46,8 @@ ${sourceString}
     )
     expect(stripeSourceMap(result.code)).toMatchInlineSnapshot(`
 "describe(\\"dummy_path.md_1\\", function () {
+  ;
+
   (function () {
     const sum = (a, b) => a + b;
 
@@ -81,6 +83,8 @@ const sum = (a, b) => a + b
 "const sum = (a, b) => a + b;
 
 describe(\\"name\\", function () {
+  ;
+
   (function () {
     it(\\"sum-test\\", function () {
       return expect(sum(1, 34)).toEqual(35);

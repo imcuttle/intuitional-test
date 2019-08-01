@@ -1,11 +1,39 @@
-# `intuitional-test-md`
+# `extract-code-md`
 
-> TODO: description
+> Extract code from markdown block code.
 
 ## Usage
 
-```
-const intuitionalTestMd = require('intuitional-test-md');
+```javascript
+const extract = require('extract-code-md')
 
-// TODO: DEMONSTRATE API
+const list = extract(
+  `
+# head1
+
+Works
+~~~javascript
+1 + 2 // => 3
+~~~
+
+DO NOT works
+~~~typescript
+1 + 2 // => 3
+~~~
+`,
+  {
+    languages: ['js', 'javascript']
+  }
+)
+
+list.length // => 1
 ```
+
+## Options
+
+### `languages`
+
+the allowed languages for extracting.
+
+- Type: `string[]`
+- Default: `['js', 'javascript']`

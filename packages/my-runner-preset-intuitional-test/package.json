@@ -24,6 +24,8 @@
     "my-runner": "^1.0.11"
   },
   "dependencies": {
+    "globby": "^10.0.1",
+    "find-up": "^4.1.0",
     "my-runner-transformer-intuitional-test": "^0.0.2",
     "read-pkg-up": "^6.0.0"
   },

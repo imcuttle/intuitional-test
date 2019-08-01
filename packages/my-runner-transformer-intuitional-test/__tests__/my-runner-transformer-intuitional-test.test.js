@@ -22,6 +22,8 @@ describe('my-runner-transformer-intuitional-test', () => {
       ).replace(/^\/\/# sourceMappingURL.*/m, '')
     ).toMatchInlineSnapshot(`
 "describe(\\"lhhh\\", function () {
+  ;
+
   (function () {
     it(\\"lalal\\", function () {
       return expect(1 + 3).toEqual(4);
@@ -52,6 +54,8 @@ describe('my-runner-transformer-intuitional-test', () => {
       ).replace(/^\/\/# sourceMappingURL.*/m, '')
     ).toMatchInlineSnapshot(`
 "describe(\\"name\\", function () {
+  ;
+
   (function () {
     it(\\"lxs\\", function () {
       return expect(1 + 3).toEqual(4);

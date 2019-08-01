@@ -1,11 +1,19 @@
 # `babel-preset-intuitional-test`
 
-> TODO: description
+> The babel preset for intuitional test.
 
-## Usage
+## Options
 
-```
-const babelPresetIntuitionalTest = require('babel-preset-intuitional-test');
+### `parseOptions`
 
-// TODO: DEMONSTRATE API
-```
+- Type: `{}`
+- See: [`babel-plugin-intuitional-test-parse`](../babel-plugin-intuitional-test-parse)
+
+### `stringifyOptions`
+
+- Type: `{}`
+- See: [`babel-plugin-intuitional-test-stringify`](../babel-plugin-intuitional-test-stringify)
+
+### `...restOptions`
+
+Common options for `babel-plugin-intuitional-test-stringify` and `babel-plugin-intuitional-test-parse`
