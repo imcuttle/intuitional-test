@@ -1,6 +1,6 @@
 {
   "name": "extract-code-jsdoc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "imcuttle <moyuyc95@gmail.com>",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@babel/parser": "^7.5.5",
     "@babel/traverse": "^7.5.5",
-    "create-extractor": "^0.0.1",
+    "create-extractor": "^0.0.2",
     "doctrine-temporary-fork": "^2.1.0"
   },
   "scripts": {
