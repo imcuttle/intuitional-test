@@ -4,14 +4,19 @@ const babelJest = require('babel-jest')
 const extractFromJSDoc = require('extract-code-jsdoc')
 const extractFromMarkdown = require('extract-code-md')
 
-function createSourceList(extractedList, async) {
+function createSourceList(extractedList, namespaceWrapTemplate) {
   const sources = []
   extractedList.forEach(extracted => {
-    sources.push(
-      [`describe(${JSON.stringify(extracted.namespace)}, function() {`, '  ' + extracted.code, `}.bind(this))`].join(
-        '\n'
-      )
-    )
+    let template = namespaceWrapTemplate || 'BODY'
+    const data = {
+      NAMESPACE: JSON.stringify(extracted.namespace),
+      BODY: extracted.code
+    }
+    Object.keys(data).forEach(name => {
+      template = template.replace(name, data[name])
+    })
+
+    sources.push(template)
   })
   return sources
 }
@@ -20,8 +25,8 @@ function createTransformer({
   intuitionalTest: {
     extractMarkdownOptions = {},
     extractJSDocOptions = {},
-    async = true,
     presetOptions = {},
+    namespaceWrapTemplate = [`describe(NAMESPACE, function() {`, '  BODY', `}.bind(this))`].join('\n'),
     jsdoc = true,
     md = true,
     mdTest = /\.(md|markdown)$/i
@@ -62,7 +67,7 @@ function createTransformer({
       if (md && mdTest && filename.match(mdTest)) {
         const extractedList = extractFromMarkdown(src, { ...extractMarkdownOptions, filename })
         extractedList.fillNamespace(filename)
-        const sources = createSourceList(extractedList, async)
+        const sources = createSourceList(extractedList, namespaceWrapTemplate)
         src = sources.join('\n')
       }
       // Appends the jsdoc code in tail
@@ -70,7 +75,7 @@ function createTransformer({
         const extractedList = extractFromJSDoc(src, { ...extractJSDocOptions, filename })
         extractedList.fillNamespace(filename)
         src = [src, '/* --- intuitional-test-babel-jest --- */']
-          .concat(createSourceList(extractedList, async))
+          .concat(createSourceList(extractedList, namespaceWrapTemplate))
           .join('\n')
       }
 
