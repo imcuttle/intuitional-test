@@ -1,11 +1,18 @@
 # `intuitional-test-babel-jest`
 
-> TODO: description
+> Jest transformer for intuitional test and extends `babel-jest`
 
 ## Usage
 
-```
-const intuitionalTestBabelJest = require('intuitional-test-babel-jest');
+- `jest.config.js`
 
-// TODO: DEMONSTRATE API
+```javascript
+module.exports = {
+  transformer: {
+    '\\.jsx?$': 'intuitional-test-babel-jest',
+    '\\.md$': 'intuitional-test-babel-jest'
+  },
+  testRegex: '((\\.(test|spec)\\.(jsx?|md))|(\\.md))$',
+  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node', 'md']
+}
 ```

@@ -1,11 +1,3 @@
 # `my-runner-transformer-intuitional-test`
 
-> TODO: description
-
-## Usage
-
-```
-const myRunnerTransformerIntuitionalTest = require('my-runner-transformer-intuitional-test');
-
-// TODO: DEMONSTRATE API
-```
+> A transformer for [`my-runner`](https://github.com/imcuttle/my-runner)

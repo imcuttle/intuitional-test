@@ -19,31 +19,7 @@ function index({
   const pureMdExtensions = mdExtensions.map(ext => ext.replace(/^\./, ''))
   const mdTest = new RegExp(`\\.(${pureMdExtensions.join('|')})$`)
 
-  const defaultCommonItOptions = {
-    namespaceWrapTemplate: '',
-    presetOptions: {
-      libraryTarget: 'named',
-      wrapTemplate: '',
-      // libraryTarget: 'external',
-      // wrapTemplate: 'it(MESSAGE, function() {return BODY});',
-      libraryName: 'assert',
-      asyncWrapTemplate: [
-        '  Promise.resolve(ACTUAL).then(',
-        '    function(_actual_) {',
-        '      EXPRESSION',
-        '    }.bind(this)',
-        '  );'
-      ].join('\n'),
-      expressionTemplate: 'METHOD(ACTUAL, EXPECTED, MESSAGE)',
-      // expressionTemplate: 'LIBRARY_NAME(ACTUAL).METHOD(EXPECTED)',
-      methodMapper: {
-        strictEqual: 'strictEqual',
-        looseEqual: 'deepEqual',
-        looseNotEqual: 'notDeepEqual',
-        strictNotEqual: 'notStrictEqual'
-      }
-    }
-  }
+  const defaultCommonItOptions = {}
 
   const jsProcess = createTransformer({
     ...options,

@@ -1,7 +1,7 @@
 {
   "name": "intuitional-test-babel-jest",
   "version": "0.0.2",
-  "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
+  "description": "Jest transformer for intuitional test and extends `babel-jest`",
   "keywords": [],
   "author": "imcuttle <moyuyc95@gmail.com>",
   "license": "ISC",

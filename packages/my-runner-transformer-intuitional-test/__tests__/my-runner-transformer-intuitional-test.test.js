@@ -21,15 +21,13 @@ describe('my-runner-transformer-intuitional-test', () => {
         { filename: 'a.md' }
       ).replace(/^\/\/# sourceMappingURL.*/m, '')
     ).toMatchInlineSnapshot(`
-"describe(\\"lhhh\\", function () {
-  ;
+"var _looseEqual = require(\\"assert\\").deepEqual;
 
-  (function () {
-    it(\\"lalal\\", function () {
-      return expect(1 + 3).toEqual(4);
-    }.bind(this));
-  })();
-}.bind(this));
+;
+
+(function () {
+  _looseEqual(1 + 3, 4, \\"lalal\\");
+})();
 "
 `)
   })
@@ -53,15 +51,13 @@ describe('my-runner-transformer-intuitional-test', () => {
         { filename: 'a.js' }
       ).replace(/^\/\/# sourceMappingURL.*/m, '')
     ).toMatchInlineSnapshot(`
-"describe(\\"name\\", function () {
-  ;
+"var _looseEqual = require(\\"assert\\").deepEqual;
 
-  (function () {
-    it(\\"lxs\\", function () {
-      return expect(1 + 3).toEqual(4);
-    }.bind(this));
-  })();
-}.bind(this));
+;
+
+(function () {
+  _looseEqual(1 + 3, 4, \\"lxs\\");
+})();
 "
 `)
   })
@@ -81,33 +77,7 @@ describe('my-runner-transformer-intuitional-test', () => {
         {
           filename: 'fake.js',
           transform: {
-            '**/*.js': myRunnerTransformerIntuitionalTest({
-              intuitionalTest: {
-                namespaceWrapTemplate: '',
-                presetOptions: {
-                  libraryTarget: 'named',
-                  wrapTemplate: '',
-                  // libraryTarget: 'external',
-                  // wrapTemplate: 'it(MESSAGE, function() {return BODY});',
-                  libraryName: 'assert',
-                  asyncWrapTemplate: [
-                    '  Promise.resolve(ACTUAL).then(',
-                    '    function(_actual_) {',
-                    '      EXPRESSION',
-                    '    }.bind(this)',
-                    '  );'
-                  ].join('\n'),
-                  expressionTemplate: 'METHOD(ACTUAL, EXPECTED, MESSAGE)',
-                  // expressionTemplate: 'LIBRARY_NAME(ACTUAL).METHOD(EXPECTED)',
-                  methodMapper: {
-                    strictEqual: 'strictEqual',
-                    looseEqual: 'deepEqual',
-                    looseNotEqual: 'notDeepEqual',
-                    strictNotEqual: 'notStrictEqual'
-                  }
-                }
-              }
-            })
+            '**/*.js': myRunnerTransformerIntuitionalTest()
           }
         }
       )
