@@ -11,8 +11,8 @@ cache:
   directories:
     - node_modules
 
-#install:
-# - npm install
+install:
+  - npm run bootstrap
 
 jobs:
   include:
