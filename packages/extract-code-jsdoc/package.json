@@ -1,6 +1,6 @@
 {
   "name": "extract-code-jsdoc",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Now I’m the model of a modern major general / The venerated Virginian veteran whose men are all / Lining up, to put me up on a pedestal / Writin’ letters to relatives / Embellishin’ my elegance and eloquence / But the elephant is in the room / The truth is in ya face when ya hear the British cannons go / BOOM",
   "keywords": [],
   "author": "imcuttle <moyuyc95@gmail.com>",
@@ -18,10 +18,10 @@
     "url": "git+https://github.com/imcuttle/intuitional-test.git"
   },
   "dependencies": {
-    "create-extractor": "^0.0.0",
-    "doctrine-temporary-fork": "^2.1.0",
     "@babel/parser": "^7.5.5",
-    "@babel/traverse": "^7.5.5"
+    "@babel/traverse": "^7.5.5",
+    "create-extractor": "^0.0.1",
+    "doctrine-temporary-fork": "^2.1.0"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
