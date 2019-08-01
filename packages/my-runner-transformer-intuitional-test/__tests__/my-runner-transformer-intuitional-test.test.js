@@ -22,9 +22,11 @@ describe('my-runner-transformer-intuitional-test', () => {
       ).replace(/^\/\/# sourceMappingURL.*/m, '')
     ).toMatchInlineSnapshot(`
 "describe(\\"lhhh\\", function () {
-  it(\\"lalal\\", function () {
-    return expect(1 + 3).toEqual(4);
-  }.bind(this));
+  (function () {
+    it(\\"lalal\\", function () {
+      return expect(1 + 3).toEqual(4);
+    }.bind(this));
+  })();
 }.bind(this));
 "
 `)
@@ -50,9 +52,11 @@ describe('my-runner-transformer-intuitional-test', () => {
       ).replace(/^\/\/# sourceMappingURL.*/m, '')
     ).toMatchInlineSnapshot(`
 "describe(\\"name\\", function () {
-  it(\\"lxs\\", function () {
-    return expect(1 + 3).toEqual(4);
-  }.bind(this));
+  (function () {
+    it(\\"lxs\\", function () {
+      return expect(1 + 3).toEqual(4);
+    }.bind(this));
+  })();
 }.bind(this));
 "
 `)

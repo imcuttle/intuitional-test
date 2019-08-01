@@ -46,13 +46,15 @@ ${sourceString}
     )
     expect(stripeSourceMap(result.code)).toMatchInlineSnapshot(`
 "describe(\\"dummy_path.md_1\\", function () {
-  const sum = (a, b) => a + b;
+  (function () {
+    const sum = (a, b) => a + b;
 
-  it(\\"message\\", function () {
-    return Promise.resolve(sum(1, 2)).then(function (_actual_) {
-      expect(_actual_).toEqual(3);
+    it(\\"message\\", function () {
+      return Promise.resolve(sum(1, 2)).then(function (_actual_) {
+        expect(_actual_).toEqual(3);
+      }.bind(this));
     }.bind(this));
-  }.bind(this));
+  })();
 }.bind(this));
 "
 `)
@@ -79,9 +81,11 @@ const sum = (a, b) => a + b
 "const sum = (a, b) => a + b;
 
 describe(\\"name\\", function () {
-  it(\\"sum-test\\", function () {
-    return expect(sum(1, 34)).toEqual(35);
-  }.bind(this));
+  (function () {
+    it(\\"sum-test\\", function () {
+      return expect(sum(1, 34)).toEqual(35);
+    }.bind(this));
+  })();
 }.bind(this));
 "
 `)

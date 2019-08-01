@@ -36,14 +36,61 @@ addAsync(1, 1) // => Promise<2>
 
 ## How it works?
 
-intuitional-test use [`babel-preset-intuitional-test`](./packages/babel-preset-intuitional-test)
+intuitional-test use [`babel-preset-intuitional-test`](./packages/babel-preset-intuitional-test) transforming the above syntax as some assertions.
 
-## Usage
+For example:
 
-```javascript
+- Input
+
+```
+const add = (a, b) => a + b
+// looseEqual
+add(1, 1) // => 2
 ```
 
-## API
+- Output
+
+```
+const add = (a, b) => a + b
+assert.deepEqual(add(1, 1), 2, "looseEqual")
+```
+
+This is a case of transforming, It's different with [`intuitional-test-babel-jest`](./packages/intuitional-test-babel-jest).
+
+- Output
+
+```
+const add = (a, b) => a + b
+
+describe('filename ...', () => {
+  it("looseEqual", () => {
+    expect(add(1, 1)).toEqual(2)
+  })
+})
+```
+
+So we could run intuitional test in `jest` by [`intuitional-test-babel-jest`](./packages/intuitional-test-babel-jest) transformer or [`my-runner`](https://github.com/imcuttle/my-runner) by [preset](./packages/my-runner-preset-intuitional-test).
+
+Even writing intuitional test in markdown and jsdoc.
+
+- Markdown
+
+````markdown
+```javascript namespace=test
+1 + 2 // => 3
+```
+````
+
+- JSDoc
+
+```javascript
+/**
+ * @name add
+ * @example
+ * add(1, 2) // => 3
+ */
+const add = (a, b) => a + b
+```
 
 ## Contributing
 

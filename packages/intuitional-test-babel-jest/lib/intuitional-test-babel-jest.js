@@ -10,7 +10,7 @@ function createSourceList(extractedList, namespaceWrapTemplate) {
     let template = namespaceWrapTemplate || 'BODY'
     const data = {
       NAMESPACE: JSON.stringify(extracted.namespace),
-      BODY: extracted.code
+      BODY: [`(function(){`, extracted.code, `})()`].join('\n')
     }
     Object.keys(data).forEach(name => {
       template = template.replace(name, data[name])
