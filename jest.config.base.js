@@ -7,7 +7,7 @@
 
 module.exports = {
   roots: ['<rootDir>', '<rootDir>/packages'],
-  testPathIgnorePatterns: ['__template', 'packages/.+/README.md'],
+  testPathIgnorePatterns: ['__template', 'packages/.+/README.md', 'packages/.+/CHANGLOG.md'],
   transform: {
     '^.+\\.jsx?$': '<rootDir>/packages/intuitional-test-babel-jest',
     '^.+\\.md$': '<rootDir>/packages/intuitional-test-babel-jest'
