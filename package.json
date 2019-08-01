@@ -6,7 +6,8 @@
   "description": "Make testing is intuitional and convenient in comment, markdown, and so on. ",
   "author": "imcuttle <moyuyc95@gmail.com>",
   "scripts": {
-    "test": "jest",
+    "test:my-runner": "(cd packages/examples && my-runner README.md)",
+    "test": "npm run test:my-runner && jest",
     "prepublishOnly": "npm test",
     "bootstrap": "lerna bootstrap",
     "prerelease": "npm test",
@@ -47,6 +48,7 @@
     "husky": "^2.2.0",
     "jest": "^23.6.0",
     "lerna": "^3.13.4",
+    "my-runner": "^1.0.11",
     "prettier": "^1.17.1",
     "pretty-quick": "^1.10.0"
   }
