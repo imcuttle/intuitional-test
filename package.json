@@ -31,7 +31,6 @@
     "test",
     "intuitional-test"
   ],
-  "typings": "index.d.ts",
   "license": "MIT",
   "repository": "imcuttle/intuitional-test",
   "commitlint": {
