@@ -1,6 +1,6 @@
 {
   "name": "intuitional-test-babel-jest",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Jest transformer for intuitional test and extends `babel-jest`",
   "keywords": [],
   "author": "imcuttle <moyuyc95@gmail.com>",
@@ -19,9 +19,9 @@
   },
   "dependencies": {
     "babel-jest": "^24.8.0",
-    "babel-preset-intuitional-test": "^0.0.3",
-    "extract-code-jsdoc": "^0.0.3",
-    "extract-code-md": "^0.0.3"
+    "babel-preset-intuitional-test": "^0.0.4",
+    "extract-code-jsdoc": "^0.0.4",
+    "extract-code-md": "^0.0.4"
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"

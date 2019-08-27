@@ -1,6 +1,6 @@
 {
   "name": "my-runner-preset-intuitional-test",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A preset for [`my-runner`](https://github.com/imcuttle/my-runner)",
   "keywords": [],
   "author": "imcuttle <moyuyc95@gmail.com>",
@@ -26,7 +26,7 @@
   "dependencies": {
     "find-up": "^4.1.0",
     "globby": "^10.0.1",
-    "my-runner-transformer-intuitional-test": "^0.0.3",
+    "my-runner-transformer-intuitional-test": "^0.0.4",
     "read-pkg-up": "^6.0.0"
   },
   "peerDependencies": {

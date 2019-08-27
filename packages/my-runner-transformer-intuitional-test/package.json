@@ -1,6 +1,6 @@
 {
   "name": "my-runner-transformer-intuitional-test",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A transformer for [`my-runner`](https://github.com/imcuttle/my-runner)",
   "keywords": [],
   "author": "imcuttle <moyuyc95@gmail.com>",
@@ -24,7 +24,7 @@
     "my-runner": "^1.0.11"
   },
   "dependencies": {
-    "intuitional-test-babel-jest": "^0.0.3"
+    "intuitional-test-babel-jest": "^0.0.4"
   },
   "bugs": {
     "url": "https://github.com/imcuttle/intuitional-test/issues"
