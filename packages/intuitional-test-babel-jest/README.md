@@ -8,7 +8,7 @@
 
 ```javascript
 module.exports = {
-  transformer: {
+  transform: {
     '\\.jsx?$': 'intuitional-test-babel-jest',
     '\\.md$': 'intuitional-test-babel-jest'
   },
