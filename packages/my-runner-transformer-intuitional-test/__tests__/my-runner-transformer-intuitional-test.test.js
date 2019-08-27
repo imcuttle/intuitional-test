@@ -21,11 +21,11 @@ describe('my-runner-transformer-intuitional-test', () => {
         { filename: 'a.md' }
       ).replace(/^\/\/# sourceMappingURL.*/m, '')
     ).toMatchInlineSnapshot(`
-"var _looseEqual = require(\\"assert\\").deepEqual;
-
-;
+";
 
 (function () {
+  var _looseEqual = require(\\"assert\\").deepEqual;
+
   _looseEqual(1 + 3, 4, \\"lalal\\");
 })();
 "
@@ -51,11 +51,11 @@ describe('my-runner-transformer-intuitional-test', () => {
         { filename: 'a.js' }
       ).replace(/^\/\/# sourceMappingURL.*/m, '')
     ).toMatchInlineSnapshot(`
-"var _looseEqual = require(\\"assert\\").deepEqual;
-
-;
+";
 
 (function () {
+  var _looseEqual = require(\\"assert\\").deepEqual;
+
   _looseEqual(1 + 3, 4, \\"lxs\\");
 })();
 "

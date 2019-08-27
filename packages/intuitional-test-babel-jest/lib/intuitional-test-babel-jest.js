@@ -4,13 +4,18 @@ const babelJest = require('babel-jest')
 const extractFromJSDoc = require('extract-code-jsdoc')
 const extractFromMarkdown = require('extract-code-md')
 
-function createSourceList(extractedList, namespaceWrapTemplate) {
+function createSourceList(extractedList, namespaceWrapTemplate, transform) {
   const sources = []
   extractedList.forEach(extracted => {
+    let code = extracted.code
+    if (typeof transform === 'function') {
+      code = transform(code)
+    }
+
     let template = namespaceWrapTemplate || 'BODY'
     const data = {
       NAMESPACE: JSON.stringify(extracted.namespace),
-      BODY: [`;(function(){`, extracted.code, `})()`].join('\n')
+      BODY: [`;(function(){`, code, `})()`].join('\n')
     }
     Object.keys(data).forEach(name => {
       template = template.replace(name, data[name])
@@ -64,10 +69,18 @@ function createTransformer({
       return babelTransformer.getCacheKey(fileData, filename, configString, { config, instrument, rootDir })
     },
     process(src, filename = '', config = {}, transformOptions) {
+      const transform = code => {
+        let result = babelTransformer.process.apply(this, [code, filename, config, transformOptions])
+        if (typeof result === 'string') {
+          return result
+        }
+        return result && result.code
+      }
+
       if (md && mdTest && filename.match(mdTest)) {
         const extractedList = extractFromMarkdown(src, { ...extractMarkdownOptions, filename })
         extractedList.fillNamespace(filename)
-        const sources = createSourceList(extractedList, namespaceWrapTemplate)
+        const sources = createSourceList(extractedList, namespaceWrapTemplate, transform)
         src = sources.join('\n')
       }
       // Appends the jsdoc code in tail
@@ -75,7 +88,7 @@ function createTransformer({
         const extractedList = extractFromJSDoc(src, { ...extractJSDocOptions, filename })
         extractedList.fillNamespace(filename)
         src = [src, '/* --- intuitional-test-babel-jest --- */']
-          .concat(createSourceList(extractedList, namespaceWrapTemplate))
+          .concat(createSourceList(extractedList, namespaceWrapTemplate, transform))
           .join('\n')
       }
 
