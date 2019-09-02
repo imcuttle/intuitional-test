@@ -60,6 +60,8 @@ function createVisitor(babel, opts) {
       if (tail && (matched = matches(tail.value))) {
         if (leading && !isJSDoc(leading.value) && !matches(leading.value)) {
           matched.description = leading.value.trim()
+        } else {
+          matched.description = String(path.get('expression'))
         }
         path.node.data = Object.assign(
           path.node.data || {

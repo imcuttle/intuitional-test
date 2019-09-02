@@ -75,7 +75,7 @@ _looseEqual(1 + 2, 3, \\"aaa\\"); // => 3"
     expect(
       babel.transform(
         `const add = (a, b) => a + b;
-// unknown message 0
+        
 add(1, 1) // != 1
 // add test
 add(1, 1) // => 2`,
@@ -100,10 +100,9 @@ add(1, 1) // => 2`,
         }
       ).code
     ).toMatchInlineSnapshot(`
-"const add = (a, b) => a + b; // unknown message 0
+"const add = (a, b) => a + b;
 
-
-it(\\"unknown message 0\\", function () {
+it(\\"add(1, 1)\\", function () {
   return expect(add(1, 1)).not.toEqual(1);
 }); // != 1
 // add test
