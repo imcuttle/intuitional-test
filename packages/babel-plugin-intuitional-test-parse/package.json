@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-intuitional-test-parse",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "The babel plugin for intuitional test syntax parser",
   "author": "imcuttle <moyuyc95@gmail.com>",
   "homepage": "https://github.com/imcuttle/intuitional-test#readme",

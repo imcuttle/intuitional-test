@@ -1,6 +1,6 @@
 {
   "name": "extract-code-jsdoc",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Extract code from jsdoc `@example` tag.",
   "keywords": [],
   "author": "imcuttle <moyuyc95@gmail.com>",
@@ -20,7 +20,7 @@
   "dependencies": {
     "@babel/parser": "^7.5.5",
     "@babel/traverse": "^7.5.5",
-    "create-extractor": "^0.0.4",
+    "create-extractor": "^0.0.5",
     "doctrine-temporary-fork": "^2.1.0"
   },
   "scripts": {
