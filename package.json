@@ -43,7 +43,7 @@
     "@commitlint/config-conventional": "^7.6.0",
     "@types/jest": "^23.3.14",
     "conventional-changelog-cli": "^2.0.21",
-    "documentation": "^11.0.0",
+    "documentation": "^14.0.0",
     "husky": "^2.2.0",
     "jest": "^23.6.0",
     "lerna": "^3.13.4",
